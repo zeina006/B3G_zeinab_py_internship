@@ -1,15 +1,16 @@
 import time
-def time_it(func):
+def timer(func):
     def wrapper():
         start=time.time()
-        func()
+        result=func()
         end=time.time()
-        print("Time Taken:",round(end-start,5))
+        print("Time Taken:",end-start,"second")
+        return result
     return wrapper
-    @time_it
-    def calc_sum():
-        total=0
-        for i in range(1,1000001):
-         total+=1
+@timer
+def calc_sum():
+    total=0
+    for i in range(1,1000001):
+        total+=1
     print("Sum:",total)
-    calc_sum()
+calc_sum()
