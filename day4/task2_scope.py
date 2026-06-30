@@ -11,4 +11,4 @@ english_greet=make_greeting("English")
 hindi_greet=make_greeting("Hindi")
 
 english_greet("Zeinab")
-hindi_greet("Ilsha")
+hindi_greet("India")

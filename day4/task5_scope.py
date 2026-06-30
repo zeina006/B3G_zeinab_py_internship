@@ -3,8 +3,8 @@ def outer():
     mode="Outer"
     def inner():
         mode="Inner"
-        print("Inside Inner:",mode)
+        print("Inside inner():",mode)
     inner()
-    print("Inside Outer:",mode)
-outer
+    print("Inside outer():",mode)
+outer()
 print("Global:",mode)
